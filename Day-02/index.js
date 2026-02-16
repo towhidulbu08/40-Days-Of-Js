@@ -35,7 +35,34 @@ const $myVariable = 42;
 // 2. Function Scope: Variables declared within a function have function scope and can only be accessed within that function.
 // 3. Block Scope: Variables declared with `let` or `const` within a block (e.g., inside an if statement or loop) have block scope and can only be accessed within that block.
 // Hoisting is a JavaScript mechanism where variable and function declarations are moved to the top of their containing scope during the compilation phase. This means that you can use variables and functions before they are declared in the code. However, only the declarations are hoisted, not the initializations. For example:
-console.log(myVar); // Output: undefined (due to hoisting)
+//console.log(myVar); // Output: undefined (due to hoisting)
 var myVar = "Hello";
 let myLet = "World";
-console.log(myLet); // Output: ReferenceError: Cannot access 'myLet' before initialization (let is not hoisted like var)
+//console.log(myLet); // Output: ReferenceError: Cannot access 'myLet' before initialization (let is not hoisted like var)
+
+let address = "Bangladesh";
+console.log(address);
+
+// function myFunction() {
+//   var address = "Dhaka";
+//   console.log(address);
+// }
+// myFunction(); // Output: Dhaka
+
+// let address = "Dhaka";
+console.log(address); // Output: Bangladesh
+
+//initialize vs assignement of variables:
+// Initialization of a variable is the process of declaring a variable and assigning it an initial value at the same time. For example:
+let city = "New York"; // This is initialization because we are declaring the variable 'city' and assigning it the value "New York" in one step.
+// Assignment of a variable is the process of giving a value to a variable after it has been declared. For example:
+let country; // This is declaration without initialization
+country = "USA"; // This is assignment because we are assigning the value "USA" to the variable 'country' after it has been declared.
+
+// undefined vs null:
+// undefined is a primitive value that indicates that a variable has been declared but has not been assigned a value. For example:
+let myVar;
+console.log(myVar); // Output: undefined
+// null is a primitive value that represents the intentional absence of any  value. It is often used to indicate that a variable should have no value. For example:
+let myNullVar = null;
+console.log(myNullVar); // Output: null
