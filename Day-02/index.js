@@ -87,3 +87,6 @@ console.log(mutableVar); // Output: World
 // Immutable variables are variables that cannot be changed after they have been created. For example:
 const immutableVar = "Hello";
 // immutableVar = "World"; // This would throw an error because immutableVar is an immutable variable
+
+//? How Data Stored In Memory?
+// In JavaScript, data is stored in memory using a combination of stack and heap memory. Primitive types (such as strings, numbers, booleans, null, undefined, and symbols) are stored in the stack memory, while reference types (such as objects, arrays, and functions) are stored in the heap memory. When a variable is assigned a primitive value, the value is stored directly in the stack. When a variable is assigned a reference type, a reference to the location of the object in the heap is stored in the stack. This allows for efficient memory management and access to data in JavaScript.
