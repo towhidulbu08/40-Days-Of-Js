@@ -72,3 +72,13 @@ console.log("Preincrement:", ++increment);
 let postIncrement = 5;
 console.log("Postincrement:", postIncrement++);
 console.log("Value after postincrement:", postIncrement);
+
+//Comparison Operators:loose equality (==) and strict equality (===). The loose equality operator (==) compares values for equality after performing type coercion, while the strict equality operator (===) compares both value and type without performing type coercion. For example, 5 == "5" will return true because the string "5" is coerced to the number 5 before comparison, while 5 === "5" will return false because they are of different types.
+
+//Type Coercion: When comparing values of different types, JavaScript performs type coercion to convert one or both values to a common type before making the comparison. For example, when comparing a number and a string, JavaScript will convert the string to a number if possible before making the comparison. This can lead to unexpected results, so it's important to be aware of type coercion when using comparison operators.
+// console.log("5 == '5':", 5 == "5");
+// console.log("5 === '5':", 5 === "5");
+
+console.log(0 == false);
+
+//strict equality operator (===) does not perform type coercion, so it will return false when comparing values of different types, even if they are loosely equal. For example, 0 === false will return false because they are of different types (number and boolean), while 0 == false will return true because the boolean false is coerced to the number 0 before comparison.
