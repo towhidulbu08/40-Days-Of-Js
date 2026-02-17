@@ -66,3 +66,24 @@ console.log(myVar); // Output: undefined
 // null is a primitive value that represents the intentional absence of any  value. It is often used to indicate that a variable should have no value. For example:
 let myNullVar = null;
 console.log(myNullVar); // Output: null
+
+let name, salary, department;
+
+//Primitive vs Reference types:
+// Primitive types are basic data types that are immutable (cannot be changed). They include: string, number, boolean, null, undefined, and symbol. For example:
+let myString = "Hello"; // This is a primitive type (string)
+let myNumber = 42; // This is a primitive type (number)
+let myBoolean = true; // This is a primitive type (boolean)
+// Reference types are complex data types that are mutable (can be changed). They include: objects, arrays, and functions. For example:
+let myObject = { name: "John", age: 30 }; // This is a reference type (object)
+let myArray = [1, 2, 3];
+
+//Mutable vs Immutable variables:
+// Mutable variables are variables that can be changed after they have been created. For example:
+let mutableVar = "Hello";
+mutableVar = "World"; // This is allowed because mutableVar is a mutable variable
+console.log(mutableVar); // Output: World
+
+// Immutable variables are variables that cannot be changed after they have been created. For example:
+const immutableVar = "Hello";
+// immutableVar = "World"; // This would throw an error because immutableVar is an immutable variable
