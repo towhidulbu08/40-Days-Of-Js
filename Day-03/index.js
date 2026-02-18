@@ -79,6 +79,29 @@ console.log("Value after postincrement:", postIncrement);
 // console.log("5 == '5':", 5 == "5");
 // console.log("5 === '5':", 5 === "5");
 
-console.log(0 == false);
+// console.log(0 == false);
 
 //strict equality operator (===) does not perform type coercion, so it will return false when comparing values of different types, even if they are loosely equal. For example, 0 === false will return false because they are of different types (number and boolean), while 0 == false will return true because the boolean false is coerced to the number 0 before comparison.
+// console.log(null === null);
+// console.log(undefined === undefined);
+// console.log(null===undefined);
+
+// console.log(null == null);
+// console.log(undefined == undefined);
+// console.log(null==undefined);
+
+//?NaN:
+// console.log("a" == 3);
+// console.log(NaN == 3);
+// console.log(NaN === 3);
+// console.log(NaN == NaN);
+// console.log(NaN === NaN);
+
+//?Comparing Objects:
+// let obj1 = { name: "Alice" };
+// let obj2 = { name: "Alice" };
+// console.log("obj1 == obj2:", obj1 == obj2);
+// console.log("obj1 === obj2:", obj1 === obj2);
+
+console.log(6 && true);
+console.log(4 > 3 || 2 > 1);
