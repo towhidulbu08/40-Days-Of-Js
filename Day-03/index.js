@@ -105,3 +105,30 @@ console.log("Value after postincrement:", postIncrement);
 
 console.log(6 && true);
 console.log(4 > 3 || 2 > 1);
+
+//Short-circuit Evaluation: In logical operations, JavaScript uses short-circuit evaluation, which means that it evaluates expressions from left to right and stops as soon as the result is determined. For example, in the expression true || false, JavaScript will return true without evaluating the second operand because the first operand is already true. Similarly, in the expression false && true, JavaScript will return false without evaluating the second operand because the first operand is already false.
+
+//Bitwise Operators: Bitwise operators perform operations on the binary representations of numbers. For example, the bitwise AND operator (&) compares each bit of two numbers and returns a new number where each bit is set to 1 only if both corresponding bits of the original numbers are 1. For example, 5 & 3 will return 1 because the binary representation of 5 is 101 and the binary representation of 3 is 011, and only the last bit is set to 1 in both numbers.
+
+15 & 9;
+
+//Binary Representation:
+// 15 in binary is 1111
+// 9 in binary is 1001
+//15/2 = 7 remainder 1
+//7/2 = 3 remainder 1
+//3/2 = 1 remainder 1
+//1/2 = 0 remainder 1
+//  9/2=4(1)
+//  4/2=2(0)
+//  2/2=1(0)
+//  1/2=0(1)
+
+//1111 & 1001 =    1001(9)
+// 15 & 9=9
+// 15 | 9 = 1111 | 1001 = 1111(15)
+
+// XOR:
+// 15 ^ 9 = 1111 ^ 1001 = 0110(6)
+
+//0*2**0+1*2**1+1*2**2+0*2**3=0+2+4+0=6
