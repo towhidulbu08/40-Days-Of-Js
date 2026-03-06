@@ -1,20 +1,38 @@
-// Day-05 JavaScript file
+//Multiple Counters for single loop
 
-// Additon of even numbers between 1 to 100
-
-//?Nested Loops:
-
-// for (let i = 1; i <= 3; i++) {
-//   for (let j = 1; j <= 3; j++) {
-//     console.log("Row", i, "Col", j);
-//   }
+// for (let i = 1, j = 10; i <= 10 && j >= 1; i++, j--) {
+//   //console.log(i, j);
 // }
 
-//?Break and Continue:
+// Some Star Pattern Problems:
+// for (let i = 1; i <= 5; i++) {
+//   let star = "";
+//   for (let j = 5; j >= i; j--) {
+//     star += "*";
+//   }
+//   console.log(star);
+// }
 
-for (let i = 1; i <= 10; i++) {
-  if (i === 3) {
-    continue;
-  }
-  console.log(i);
-}
+// for (let i = 1; i <= 5; i++) {
+//   let star = "";
+//   for (let j = 1; j <= i; j++) {
+//     star += "*";
+//   }
+//   console.log(star);
+// }
+
+// for (let i = 1; i <= 5; i++) {
+//   let star = "";
+//   for (let j = 1; j <= 5; j++) {
+//     star += "*";
+//   }
+//   console.log(star);
+// }
+
+// for (let i = 1; i <= 5; i++) {
+//   let star = "   ";
+//   for (let j = 1; j <= i; j++) {
+//     star += "*";
+//   }
+//   console.log(star);
+// }
