@@ -61,13 +61,13 @@ country = "USA"; // This is assignment because we are assigning the value "USA" 
 
 // undefined vs null:
 // undefined is a primitive value that indicates that a variable has been declared but has not been assigned a value. For example:
-let myVar;
-console.log(myVar); // Output: undefined
+// let myVar;
+// console.log(myVar); // Output: undefined
 // null is a primitive value that represents the intentional absence of any  value. It is often used to indicate that a variable should have no value. For example:
-let myNullVar = null;
-console.log(myNullVar); // Output: null
+// let myNullVar = null;
+// console.log(myNullVar); // Output: null
 
-let name, salary, department;
+// let name, salary, department;
 
 //Primitive vs Reference types:
 // Primitive types are basic data types that are immutable (cannot be changed). They include: string, number, boolean, null, undefined, and symbol. For example:
@@ -90,3 +90,19 @@ const immutableVar = "Hello";
 
 //? How Data Stored In Memory?
 // In JavaScript, data is stored in memory using a combination of stack and heap memory. Primitive types (such as strings, numbers, booleans, null, undefined, and symbols) are stored in the stack memory, while reference types (such as objects, arrays, and functions) are stored in the heap memory. When a variable is assigned a primitive value, the value is stored directly in the stack. When a variable is assigned a reference type, a reference to the location of the object in the heap is stored in the stack. This allows for efficient memory management and access to data in JavaScript.
+
+//* Task-04:
+
+let obj = {
+  name: "Tamim",
+  age: 33,
+};
+
+const arr = [1, 2, 3, 4, 5];
+
+let newObj = obj;
+let newArr = arr;
+newObj.name = "Sakib";
+newArr.push(6);
+console.log(obj);
+console.log(arr);

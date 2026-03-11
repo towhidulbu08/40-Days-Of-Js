@@ -1,38 +1,24 @@
-//Multiple Counters for single loop
+let counter = 1;
 
-// for (let i = 1, j = 10; i <= 10 && j >= 1; i++, j--) {
-//   //console.log(i, j);
-// }
+while (counter <= 10) {
+  //console.log(counter);
+  counter++;
+}
+let condition = 3;
+do {
+  //console.log(condition);
+  condition++;
+} while (condition <= 10);
 
-// Some Star Pattern Problems:
-// for (let i = 1; i <= 5; i++) {
-//   let star = "";
-//   for (let j = 5; j >= i; j--) {
-//     star += "*";
-//   }
-//   console.log(star);
-// }
+// let i = 1;
 
-// for (let i = 1; i <= 5; i++) {
-//   let star = "";
-//   for (let j = 1; j <= i; j++) {
-//     star += "*";
-//   }
-//   console.log(star);
-// }
+// do {
+//   // console.log("i", i);
+//   i++;
+// } while (i <= 5);
 
-// for (let i = 1; i <= 5; i++) {
-//   let star = "";
-//   for (let j = 1; j <= 5; j++) {
-//     star += "*";
-//   }
-//   console.log(star);
-// }
+//Infinite loop
 
-// for (let i = 1; i <= 5; i++) {
-//   let star = "   ";
-//   for (let j = 1; j <= i; j++) {
-//     star += "*";
-//   }
-//   console.log(star);
+// for (;;) {
+//   //console.log("Infinte loop");
 // }

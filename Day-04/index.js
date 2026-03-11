@@ -1,2 +1,2 @@
 // JavaScript logic for Day-04
-console.log('Hello from index.js');
+console.log("Day 04: Control Flow and Loops");
